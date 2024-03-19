@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Oswald&family=Poppins:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Oswald&family=Poppins:wght@300&family=Varela+Round&display=swap');
+
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img{
+    width: 53px;
+    padding: 0 5px;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 82%;
+    border-radius: 12px;
+    padding: 10px;
+    background-image: url('bg.jpg');
+}
+
+.bottom{
+    position: sticky;
+    height: 90px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons{
+    margin-top: 15px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+h1{
+    margin: 10px 15px;
+}
+
+.songItemContainer{
+    margin: 57px 0;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    font-family: 'Varela Round',sans-serif;
+}
+
+.songItem img{
+    width: 45px;
+    margin: 0 17px;
+    border-radius: 30px;
+}
+
+.timestamp{
+    margin: 0 20px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 9.5vw;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    margin-right: 8px;
+}
+
+.info span{
+    opacity: 0;
+    position: absolute;
+    left: 14.5vw;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    transition: opacity 0.5s ease-in;
+}
